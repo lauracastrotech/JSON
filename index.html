@@ -6,6 +6,44 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul id ="people"></ul>
+
+    <script>
+        // let person = {
+        //     name: "Laura",
+        //     age: 34,
+        //     address: {
+        //         street: "5 main street",
+        //         city: "Boston"
+        //     },
+        //     children: ["Laura", "Kale"]
+        // }
+
+        // person = JSON.stringify(person);
+        // person = JSON.parse(person);
+        let people = [
+            {
+                name: "Brain",
+                age: 56
+            }, 
+            {
+                name: "Hale",
+                age:30
+            },
+            {
+                name:"Sara",
+                age: 87
+            }
+        ];
+
+        // console.log(people[0].age);
+
+        let output = '';
+        for(let i = 0; i < people.length; i++){
+            // console.log(people[i]);
+            output =+ '<li>' + people[i].name + '</li>';
+        };
+        document.getElementById('people').innerHTML = output;
+    </script>
 </body>
 </html>
